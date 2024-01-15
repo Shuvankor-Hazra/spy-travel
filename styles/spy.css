@@ -2,4 +2,51 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
 }
+header,
+main {
+  margin: 0 100px;
+}
+
+/* header area css */
+.header-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 0;
+}
+.nav-logo {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.nav-logo h1 {
+  color: #131318;
+  font-size: 36px;
+  font-weight: 800;
+  padding-left: 10px;
+}
+.nav-logo .travel {
+  color: #ff5400;
+  font-size: 36px;
+  font-weight: 800;
+}
+.nav-links ul {
+  display: inline-flex;
+  gap: 50px;
+}
+.nav-links ul li {
+  list-style: none;
+  cursor: pointer;
+}
+.nav-links ul li a {
+  text-decoration: none;
+  color: #424247;
+  font-size: 18px;
+  transition: .2s ease-in-out;
+}
+.nav-links ul li a:hover {
+    color: #ff5400;
+    font-weight: 700;
+  }
