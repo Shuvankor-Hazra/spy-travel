@@ -348,7 +348,8 @@ main {
 }
 .newsletter-img::after {
   position: absolute;
-  content: "";
+  content: "Travellhero.com\ASave up to 70%";
+  white-space: pre;
   width: 324px;
   height: 120px;
   transform: rotate(-19.628deg);
@@ -357,6 +358,12 @@ main {
   background: #ff5400;
   bottom: 46px;
   right: 7px;
+  text-align: center;
+  color: #fff;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #Rotate p {
   color: #fff;
@@ -364,9 +371,35 @@ main {
   font-size: 24px;
 }
 .newsletter-img h4 {
-  color: #FFF;
+  color: #fff;
   font-size: 32px;
   font-weight: 800;
+}
+
+/* Footer Area CSS */
+.footer-area {
+  margin-top: 100px;
+  text-align: center;
+  background: #1313180d;
+  padding: 110px 0;
+}
+.footer-area .nav-logo {
+  margin-bottom: 15px;
+}
+.footer-icon {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.footer-icon i {
+  padding: 0 10px;
+  font-size: 30px;
+}
+.footer-area h5 {
+  color: #131318;
+  font-size: 16px;
+  font-weight: 300;
+  font-family: serif;
+  margin-top: 50px;
 }
 
 @media screen and (max-width: 600px) {
@@ -482,4 +515,14 @@ main {
   .newsletter-content input {
     margin-top: 20px;
   }
+
+    /* Footer Area Mobile */
+    .footer-area {
+      margin-top: 25px;
+      padding: 30px 10px;
+    }
+    .newsletter-img::after {
+      width: 250px;
+      height: 95px;
+    }
 }
