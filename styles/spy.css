@@ -260,6 +260,53 @@ main {
   width: 100%;
 }
 
+/* Choose Area CSS */
+.choose-area {
+  margin: 100px 0;
+}
+.choose-content{
+  text-align: center;
+}
+.choose-content p{
+  margin-bottom: 25px;
+}
+.choose-card {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  justify-content: center;
+}
+.single-card {
+  border-radius: 16px;
+  padding: 30px;
+  width: 50%;
+  margin-top: 25px;
+}
+.single-card h3{
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.single-card p{
+  color: #5A5A5D;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+.card-one{
+  border: 1px solid #fbb56333;
+  background: #fbb5630d;
+}
+.card-two{
+border: 1px solid #29cef633;
+background: #29cef60d;
+}
+.card-three{
+border: 1px solid #e9444433;
+background: #e944440d;
+}
+
+
+
 @media screen and (max-width: 600px) {
   /* Header Area Mobile */
   header,
@@ -329,5 +376,16 @@ main {
   .text-gray {
     font-size: 14px;
     line-height: 20px;
+  }
+  /* Destination Area Mobile*/
+  .destination-card {
+    grid-template-areas:
+      "a"
+      "b"
+      "c"
+      "d"
+      "e"
+      "f"
+      "g";
   }
 }
