@@ -45,11 +45,11 @@ main {
   text-decoration: none;
   color: #424247;
   font-size: 18px;
-  transition: 0.2s ease-in-out;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
 }
 .menu li a:hover {
   color: #ff5400;
-  font-weight: 700;
 }
 .open-menu,
 .close-menu {
@@ -60,13 +60,13 @@ main {
   display: none;
 }
 .open-menu {
-  top: 75px;
+  top: 45px;
   right: 35px;
   transform: translateY(-50%);
 }
 .close-menu {
-  top: 62px;
-  right: 35px;
+  top: 32px;
+  right: 32px;
 }
 #check {
   display: none;
@@ -76,6 +76,9 @@ main {
   header,
   main {
     margin: 0 20px;
+  }
+  .header-area {
+    margin: 20px 0;
   }
   .nav-links .menu {
     flex-direction: column;
