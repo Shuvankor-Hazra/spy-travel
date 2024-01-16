@@ -264,10 +264,10 @@ main {
 .choose-area {
   margin: 100px 0;
 }
-.choose-content{
+.choose-content {
   text-align: center;
 }
-.choose-content p{
+.choose-content p {
   margin-bottom: 25px;
 }
 .choose-card {
@@ -282,30 +282,92 @@ main {
   width: 50%;
   margin-top: 25px;
 }
-.single-card h3{
+.single-card h3 {
   margin-top: 30px;
   margin-bottom: 10px;
 }
-.single-card p{
-  color: #5A5A5D;
+.single-card p {
+  color: #5a5a5d;
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
 }
-.card-one{
+.card-one {
   border: 1px solid #fbb56333;
   background: #fbb5630d;
 }
-.card-two{
-border: 1px solid #29cef633;
-background: #29cef60d;
+.card-two {
+  border: 1px solid #29cef633;
+  background: #29cef60d;
 }
-.card-three{
-border: 1px solid #e9444433;
-background: #e944440d;
+.card-three {
+  border: 1px solid #e9444433;
+  background: #e944440d;
 }
-
-
+/* Newsletter Area CSS */
+.newsletter-area {
+  margin: 100px 0;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 25px;
+}
+.newsletter-content {
+  border-radius: 16px;
+  border: 1px solid #ff5400;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 40%;
+}
+.newsletter-content h2 {
+  color: #131318;
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+.newsletter-content input {
+  border-radius: 8px;
+  background: #1313180d;
+  padding: 15px;
+  border: 0;
+  outline: none;
+}
+.newsletter-content button {
+  width: 100% !important;
+}
+.newsletter-img {
+  height: 500px;
+  width: 100%;
+  background-image: url(../Images/newsletter2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 16px;
+  position: relative;
+}
+.newsletter-img::after {
+  position: absolute;
+  content: "";
+  width: 324px;
+  height: 120px;
+  transform: rotate(-19.628deg);
+  flex-shrink: 0;
+  border-radius: 16px;
+  background: #ff5400;
+  bottom: 46px;
+  right: 7px;
+}
+#Rotate p {
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+}
+.newsletter-img h4 {
+  color: #FFF;
+  font-size: 32px;
+  font-weight: 800;
+}
 
 @media screen and (max-width: 600px) {
   /* Header Area Mobile */
@@ -377,7 +439,11 @@ background: #e944440d;
     font-size: 14px;
     line-height: 20px;
   }
+
   /* Destination Area Mobile*/
+  .destination-area {
+    margin: 25px 0;
+  }
   .destination-card {
     grid-template-areas:
       "a"
@@ -387,5 +453,33 @@ background: #e944440d;
       "e"
       "f"
       "g";
+  }
+
+  /* Choose Area Mobile */
+  .choose-area {
+    margin: 25px 0;
+  }
+  .choose-card {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .single-card {
+    padding: 20px;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  /* Newsletter Area Mobile */
+  .newsletter-area {
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 25px 0;
+    gap: 20px;
+  }
+  .newsletter-content p {
+    margin-bottom: 20px;
+  }
+  .newsletter-content input {
+    margin-top: 20px;
   }
 }
