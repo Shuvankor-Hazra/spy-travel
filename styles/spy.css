@@ -14,39 +14,99 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 60px 0;
+  margin: 50px 0;
 }
 .nav-logo {
   display: flex;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
+  position: relative;
 }
 .nav-logo h1 {
   color: #131318;
+  padding-left: 10px;
   font-size: 36px;
   font-weight: 800;
-  padding-left: 10px;
 }
 .nav-logo .travel {
   color: #ff5400;
   font-size: 36px;
   font-weight: 800;
 }
-.nav-links ul {
+.menu {
   display: inline-flex;
   gap: 50px;
 }
-.nav-links ul li {
+.menu li {
   list-style: none;
   cursor: pointer;
 }
-.nav-links ul li a {
+.menu li a {
   text-decoration: none;
   color: #424247;
   font-size: 18px;
-  transition: .2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
-.nav-links ul li a:hover {
-    color: #ff5400;
-    font-weight: 700;
+.menu li a:hover {
+  color: #ff5400;
+  font-weight: 700;
+}
+.open-menu,
+.close-menu {
+  position: absolute;
+  color: #131318;
+  cursor: pointer;
+  font-size: 20px;
+  display: none;
+}
+.open-menu {
+  top: 75px;
+  right: 35px;
+  transform: translateY(-50%);
+}
+.close-menu {
+  top: 62px;
+  right: 35px;
+}
+#check {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  header,
+  main {
+    margin: 0 20px;
   }
+  .nav-links .menu {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 100;
+    background-color: #999;
+    transition: all 0.2s ease-in-out;
+  }
+  .menu li {
+    margin-top: 10px;
+  }
+  .menu li a {
+    padding: 10px;
+  }
+  .open-menu,
+  .close-menu {
+    display: block;
+  }
+  #check:checked ~ .menu {
+    right: 0;
+  }
+  .nav-logo h1 {
+    font-size: 20px;
+  }
+  .nav-logo .travel {
+    font-size: 20px;
+  }
+}
