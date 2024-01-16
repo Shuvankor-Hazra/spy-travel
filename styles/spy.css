@@ -15,11 +15,10 @@ main {
 }
 .text-gray {
   color: #131318b3;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 26px;
+  font-size: 18px;
+  line-height: 30px;
 }
-.btn-primary {
+#btn-primary {
   border-radius: 8px;
   background: #ff5400;
   color: #fff;
@@ -29,6 +28,8 @@ main {
   padding: 15px 25px;
   border: 0;
   cursor: pointer;
+  width: 150px;
+  margin-top: 20px;
 }
 
 /* Header Area CSS */
@@ -160,6 +161,33 @@ main {
   cursor: pointer;
   padding: 15px 20px;
 }
+/* Popular Area CSS */
+.popular-area{
+  margin: 100px 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+  gap: 50px;
+}
+.popular-content{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-right: 50px;
+}
+.popular-content h2{
+  margin-bottom: 20px;
+}
+.popular-content ul {
+  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+.popular-image img{
+  width: 100%;
+}
 
 @media screen and (max-width: 600px) {
   /* Header Area Mobile */
@@ -214,5 +242,21 @@ main {
   .find-now{
     grid-template-columns: 1fr;
     gap: 15px;
+  }
+  /* Popular Area Mobile */
+  .popular-area{
+    margin: 25px 0;
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  .popular-content{
+    padding-right: 0;
+  }
+  .section-heading {
+    font-size: 20px;
+  }
+  .text-gray {
+    font-size: 14px;
+    line-height: 20px;
   }
 }
