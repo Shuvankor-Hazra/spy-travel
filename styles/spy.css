@@ -4,20 +4,25 @@
   box-sizing: border-box;
   font-family: "Mulish", sans-serif;
 }
+
 header,
 main {
   margin: 0 100px;
 }
+
 .section-heading {
   color: #131318;
   font-size: 40px;
   font-weight: 800;
+  margin-bottom: 20px;
 }
+
 .text-gray {
   color: #131318b3;
   font-size: 18px;
   line-height: 30px;
 }
+
 #btn-primary {
   border-radius: 8px;
   background: #ff5400;
@@ -161,22 +166,20 @@ main {
   cursor: pointer;
   padding: 15px 20px;
 }
+
 /* Popular Area CSS */
-.popular-area{
+.popular-area {
   margin: 100px 0;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-content: space-between;
   gap: 50px;
 }
-.popular-content{
-  display:flex;
+.popular-content {
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding-right: 50px;
-}
-.popular-content h2{
-  margin-bottom: 20px;
 }
 .popular-content ul {
   padding: 0 30px;
@@ -185,7 +188,75 @@ main {
   justify-content: space-between;
   gap: 20px;
 }
-.popular-image img{
+.popular-image img {
+  width: 100%;
+}
+
+/* Destination Area CSS */
+.destination-area {
+  margin: 100px 0;
+  text-align: center;
+}
+.destination-content p {
+  margin-bottom: 50px;
+}
+
+.maldives {
+  grid-area: a;
+  background: linear-gradient(0deg, rgba(19, 19, 24, 0.2) 0%, #13131833 100%),
+    url(../Images/Rectangle\ 5.png);
+}
+.indonesia {
+  grid-area: b;
+  background: linear-gradient(0deg, rgba(19, 19, 24, 0.2) 0%, #13131833 100%),
+    url(../Images/Rectangle\ 8.png);
+}
+.srilanka {
+  grid-area: c;
+  background: linear-gradient(0deg, rgba(19, 19, 24, 0.2) 0%, #13131833 100%),
+    url(../Images/Rectangle\ 6.png);
+}
+.america {
+  grid-area: d;
+  background: linear-gradient(0deg, rgba(19, 19, 24, 0.2) 0%, #13131833 100%),
+    url(../Images/Rectangle\ 7.png);
+}
+.kashmir {
+  grid-area: e;
+  background: linear-gradient(0deg, rgba(19, 19, 24, 0.2) 0%, #13131833 100%),
+    url(../Images/Rectangle\ 9.png);
+}
+.bangladesh {
+  grid-area: f;
+  background: linear-gradient(0deg, rgba(19, 19, 24, 0.2) 0%, #13131833 100%),
+    url(../Images/Rectangle\ 11.png);
+}
+.bandarban {
+  grid-area: g;
+  background: linear-gradient(0deg, rgba(19, 19, 24, 0.2) 0%, #13131833 100%),
+    url(../Images/Rectangle\ 10.png);
+}
+.destination-card {
+  gap: 25px;
+  display: grid;
+  grid-template-areas:
+    "a a a a a a b b b b b b"
+    "c c c c d d d d d d e e"
+    "f f f f f g g g g g g g";
+}
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  color: #fff;
+  font-size: 28px;
+  font-weight: 800;
+  border-radius: 16px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 350px;
   width: 100%;
 }
 
@@ -239,17 +310,17 @@ main {
     line-height: 20px;
     margin: 25px auto 50px;
   }
-  .find-now{
+  .find-now {
     grid-template-columns: 1fr;
     gap: 15px;
   }
   /* Popular Area Mobile */
-  .popular-area{
+  .popular-area {
     margin: 25px 0;
     grid-template-columns: 1fr;
     gap: 15px;
   }
-  .popular-content{
+  .popular-content {
     padding-right: 0;
   }
   .section-heading {
