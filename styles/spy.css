@@ -44,11 +44,12 @@ main {
   align-items: center;
   margin: 50px 0;
 }
-.nav-logo {
+.header-area .nav-logo {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
+  cursor: pointer;
 }
 .nav-logo h1 {
   color: #131318;
@@ -432,11 +433,6 @@ main {
   align-items: center;
   justify-content: center;
 }
-#Rotate p {
-  color: #fff;
-  text-align: center;
-  font-size: 24px;
-}
 .newsletter-img h4 {
   color: #fff;
   font-size: 32px;
@@ -448,10 +444,13 @@ main {
   margin-top: 100px;
   text-align: center;
   background: #1313180d;
-  padding: 110px 0;
+  padding: 100px 0;
 }
 .footer-area .nav-logo {
   margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .footer-icon {
   margin-top: 30px;
@@ -460,6 +459,7 @@ main {
 .footer-icon i {
   padding: 0 10px;
   font-size: 30px;
+  cursor: pointer;
 }
 .footer-area h5 {
   color: #131318;
@@ -594,14 +594,14 @@ main {
   .newsletter-content input {
     margin-top: 20px;
   }
+  .newsletter-img::after {
+    width: 250px;
+    height: 95px;
+  }
 
   /* Footer Area Mobile */
   .footer-area {
     margin-top: 25px;
     padding: 30px 10px;
-  }
-  .newsletter-img::after {
-    width: 250px;
-    height: 95px;
   }
 }
