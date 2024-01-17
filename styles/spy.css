@@ -166,6 +166,9 @@ main {
   cursor: pointer;
   padding: 15px 20px;
 }
+.btn-banner i{
+  margin-right: 10px;
+}
 
 /* Popular Area CSS */
 .popular-area {
@@ -262,7 +265,7 @@ main {
 
 /* Choose Area CSS */
 .choose-area {
-  margin: 100px 0;
+ margin: 100px 0;
 }
 .choose-content {
   text-align: center;
@@ -304,6 +307,73 @@ main {
   border: 1px solid #e9444433;
   background: #e944440d;
 }
+
+/* Related Area CSS */
+.related-area {
+  margin: 100px 0;
+}
+.related-heading{
+  text-align: center;
+  margin-bottom: 30px;
+}
+.related-card{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  text-align: center;
+}
+.related-card .card {
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0px 0px 40px 0px #00000026;
+  padding: 20px 15px;
+}
+.related-card .card img{
+  width: 100%;
+  border-radius: 16px;
+}
+.related-card  .card-text{
+  padding: 0 30px;
+}
+.card .card-title {
+  color: #18191f;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 40px;
+  margin: 15px 0;
+}
+.card .card-title span{
+  font-weight: 700;
+  color: #ff5400;
+}
+.card .card-description {
+  color: #787885;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 143%;
+  letter-spacing: 0.252px;
+}
+.card-text button{
+  display: inline-block;
+  margin: 40px 0 30px 0;
+  border-radius: 8px;
+  background: transparent;
+  color: #000;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 25px;
+  border-bottom: 1px solid #999;
+  cursor: pointer;
+}
+.card-text i{
+margin-left: 10px;
+}
+
+
+
+
+
 /* Newsletter Area CSS */
 .newsletter-area {
   margin: 100px 0;
@@ -348,7 +418,7 @@ main {
 }
 .newsletter-img::after {
   position: absolute;
-  content: "Travellhero.com\ASave up to 70%";
+  content: "Travellhero.com\ASave up to 70%";
   white-space: pre;
   width: 324px;
   height: 120px;
