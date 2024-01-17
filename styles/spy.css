@@ -166,7 +166,7 @@ main {
   cursor: pointer;
   padding: 15px 20px;
 }
-.btn-banner i{
+.btn-banner i {
   margin-right: 10px;
 }
 
@@ -265,7 +265,7 @@ main {
 
 /* Choose Area CSS */
 .choose-area {
- margin: 100px 0;
+  margin: 100px 0;
 }
 .choose-content {
   text-align: center;
@@ -312,11 +312,11 @@ main {
 .related-area {
   margin: 100px 0;
 }
-.related-heading{
+.related-heading {
   text-align: center;
   margin-bottom: 30px;
 }
-.related-card{
+.related-card {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
@@ -328,11 +328,11 @@ main {
   box-shadow: 0px 0px 40px 0px #00000026;
   padding: 20px 15px;
 }
-.related-card .card img{
+.related-card .card img {
   width: 100%;
   border-radius: 16px;
 }
-.related-card  .card-text{
+.related-card .card-text {
   padding: 0 30px;
 }
 .card .card-title {
@@ -342,7 +342,7 @@ main {
   line-height: 40px;
   margin: 15px 0;
 }
-.card .card-title span{
+.card .card-title span {
   font-weight: 700;
   color: #ff5400;
 }
@@ -353,7 +353,7 @@ main {
   line-height: 143%;
   letter-spacing: 0.252px;
 }
-.card-text button{
+.card-text button {
   display: inline-block;
   margin: 40px 0 30px 0;
   border-radius: 8px;
@@ -366,14 +366,9 @@ main {
   border-bottom: 1px solid #999;
   cursor: pointer;
 }
-.card-text i{
-margin-left: 10px;
+.card-text i {
+  margin-left: 10px;
 }
-
-
-
-
-
 /* Newsletter Area CSS */
 .newsletter-area {
   margin: 100px 0;
@@ -571,6 +566,18 @@ margin-left: 10px;
     width: 100%;
     margin-top: 20px;
   }
+  /* Related Area Mobile */
+  .related-area {
+    margin: 25px 0;
+  }
+  .related-card {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    text-align: center;
+  }
+  .card-text h3 {
+    font-size: 20px !important;
+  }
 
   /* Newsletter Area Mobile */
   .newsletter-area {
@@ -586,13 +593,13 @@ margin-left: 10px;
     margin-top: 20px;
   }
 
-    /* Footer Area Mobile */
-    .footer-area {
-      margin-top: 25px;
-      padding: 30px 10px;
-    }
-    .newsletter-img::after {
-      width: 250px;
-      height: 95px;
-    }
+  /* Footer Area Mobile */
+  .footer-area {
+    margin-top: 25px;
+    padding: 30px 10px;
+  }
+  .newsletter-img::after {
+    width: 250px;
+    height: 95px;
+  }
 }
